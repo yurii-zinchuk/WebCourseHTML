@@ -1,0 +1,191 @@
+body, html {
+    margin: 0px;
+}
+
+header {
+    background-image: url("../img/main_screen_snowy_peaks.jpg");
+    background-size: cover;
+    height: 950px;
+    width: 100%;
+    color: white;
+}
+
+#darkening {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+}
+
+#main_page_caption {
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 10%;
+}
+
+#top-nav {
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 60%;
+}
+
+.top-nav-link-container {
+    display: inline-block;
+    border-radius: 7px;
+    width: 90px;
+    margin: 5px;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+}
+
+
+#big-motto {
+    text-align: center;
+    font-size: 70px;
+    margin: 300px 0px 0px 0px;
+}
+
+#under-motto {
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 0px 0px 0px;
+}
+
+#flight-hotel-tab {
+    display: inline-block;
+    height: 90px;
+    width: 16%;
+    position: relative;
+    top: -130px;
+    left: 19%;
+    border-radius: 25px 25px 0% 0%;
+    background-color: whitesmoke;
+}
+
+.flight-hotel-tab-btn {
+    display: inline-block;
+    height: 65px;
+    width: 40%;
+    padding: 0px;
+    margin: 12px 4% 13px 4%;
+    border-radius: 20px;
+}
+
+.flight-hotel-tab-btn img {
+    position: relative;
+    left: -10%;
+}
+
+.flight-hotel-tab-btn p {
+    display: inline;
+    position: relative;
+    top: -10%;
+    font-size: 16px;
+}
+
+#flight-hotel-choice {
+    width: 62%;
+    height: 275px;
+    position: relative;
+    top: -130px;
+    left: 19%;
+    background-color: whitesmoke;
+    border-radius: 0px 25px 25px 25px;
+    vertical-align: middle;
+}
+
+#flight-hotel-choice p {
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    left: 15px;
+    top: 10px;
+}
+
+#flight-hotel-choice img {
+    position: relative;
+    margin: 0px 45px 0px 40px;
+}
+
+#return-plane {
+    rotate: 180deg;
+}
+
+#tab-plane {
+    rotate: 315deg;
+}
+
+#flight-origin-destination {
+    display: inline-block;
+    height: 155px;
+    width: 30%;
+    position: absolute;
+    left: 3%;
+    top: 20%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#flight-leave-return {
+    display: inline-block;
+    height: 155px;
+    width: 45%;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#search-btn {
+    display: inline-block;
+    height: 155px;
+    width: 15%;
+    position: absolute;
+    left: 82%;
+    top: 20%;
+    border-radius: 40%;
+}
+
+#special-upcoming-offers h1 {
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+}
+
+#special-offers-tab {
+    height: 70px;
+    width: 20%;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+#special-offers-tab button {
+    display: inline-block;
+    height: 60px;
+    width: 30%;
+    margin: 5px 1.2% 5px 1.2%;
+}
+
+.special-offer {
+    display: inline-block;
+    width: 25%;
+    margin-top: 70px;
+    position: relative;
+    left: 12.5%;
+    background-color: red;
+}
+
+#offer-content {
+    background-image: url("img/specila_offer_background.svg");
+    background-size: cover;
+}
+
+#all-rights-reserved {
+    display: inline;
+}
+
+#bottom-nav {
+    display: inline;
+}
