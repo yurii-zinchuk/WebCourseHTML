@@ -14,25 +14,24 @@
 
 <body>
     <header>
-        <div id="darkening">
-            <h1 id="main_page_caption">Treloo</h1>
+        <!-- big picture is a header background -->
+        <div class="darkening">
+            <h1 class="main_page_caption">Treloo</h1>
 
-            <nav id="top-nav">
+            <nav class="top-nav">
                 <a class="top-nav-link" href="#">Review</a>
                 <a class="top-nav-link" href="#">Tips</a>
                 <a class="top-nav-link" href="#">Alerts</a>
                 <a class="top-nav-link" href="#">Blog</a>
-                <a class="top-nav-link" href="#">Blog</a>
+                <button class="top-nav-btn" href="#">Sign In</a>
             </nav>
 
-            <p id="big-motto">
-                <strong>
-                    Discover Your Life, Travel<br>
-                    Where You Want
-                </strong>
-            </p>
+            <h1 class="big-motto">
+                Discover Your Life, Travel<br>
+                Where You Want
+            </h1>
 
-            <p id="under-motto">
+            <p class="under-motto">
                 Would you explore nature paradise in the world, let's find the best<br>
                 destination in world with us.
             </p>
@@ -40,117 +39,124 @@
     </header>
 
     <main>
-        <section id="choice-maker">
-            <div id="flight-hotel-tab">
+        <section class="choice-maker">
+            <div class="flight-hotel-tab">
 
                 <button class="flight-hotel-tab-btn">
-                    <img id="tab-plane" src="img/plane_tab_mode.svg" alt="Plane Icon" width="25px" height="25px"
+                    <img class="tab-plane" src="img/plane_tab_mode.svg" alt="Plane Icon" width="25px" height="25px"
                         loading="lazy">
-                    <p>Flight</p>
+                    <span>Flight</span>
                 </button>
 
                 <button class="flight-hotel-tab-btn">
                     <img src="img/hotel_tab_mode.svg" alt="Hotel Icon" width="25px" height="25px" loading="lazy">
-                    <p>Hotel</p>
+                    <span>Hotel</span>
                 </button>
             </div>
 
-            <div id="flight-hotel-choice">
-                <div id="flight-origin-destination">
-                    <p id="leaving-from">Leaving From<br><br>
-                        <strong>Dubai</strong>
-                    </p>
+            <div class="flight-hotel-choice">
+                <div class="flight-origin-destination">
+                    <label for="flight-origin-select">Leaving From</label>
+                    <select name="flight-origin" id="flight-origin-select">
+                        <option value="">Dubai</option>
+                        <option value="dog">Seattle</option>
+                        <option value="cat">Kyiv</option>
+                        <option value="hamster">London</option>
+                    </select>
 
                     <img src="img/plane_gray_icon.svg" alt="Plane Icon" width="25" height="25" loading="lazy">
 
-                    <p id="going-to">Going To<br><br>
-                        <strong>New York</strong>
-                    </p>
+                    <label for="flight-dest-select">Going To</label>
+                    <select name="flight-dest" id="flight-dest-select">
+                        <option value="">New York</option>
+                        <option value="dog">Seattle</option>
+                        <option value="cat">Kyiv</option>
+                        <option value="hamster">London</option>
+                    </select>
                 </div>
 
-                <div id="flight-leave-return">
-                    <p>Leave
-                        <img src="img/plane_tab_mode.svg" alt="Plane Icon" width="25" height="25"
-                            loading="lazy"><br><br>
-                        <strong>23 Jan, Sat</strong>
-                    </p>
+                <div class="flight-leave-return">
+
+                    <label for="leave-date">
+                        Leave <img src="img/plane_tab_mode.svg" alt="Plane Icon" width="25" height="25" loading="lazy">
+                    </label>
+                    <input type="date" id="leave-date" name="leave-date">
 
                     <img src="img/calendar_gray_icon.svg" alt="Plane Icon" width="25" height="25" loading="lazy">
 
-                    <p>Return
-                        <img id="return-plane" src="img/plane_tab_mode.svg" alt="Plane Icon" width="25" height="25"
-                            loading="lazy"><br><br>
-                        <strong>14 Jan, Thu</strong>
-                    </p>
+                    <label for="return-date">
+                        Return <img src="img/plane_tab_mode.svg" alt="Plane Icon" width="25" height="25" loading="lazy">
+                    </label>
+                    <input type="date" id="return-date" name="return-date">
                 </div>
 
-                <button id="search-btn">Search</button>
+                <button class="search-btn">Search</button>
             </div>
         </section>
 
-        <section id="special-upcoming-offers">
+        <section class="special-upcoming-offers">
             <h1>Special Upcoming Offers</h1>
 
-            <div id="special-offers-tab">
+            <div class="special-offers-tab">
                 <button>Family</button>
                 <button>Team</button>
                 <button>Couple</button>
             </div>
 
-            <div class="special-offer">
+            <article class="special-offer">
                 <figure>
                     <img src="img/loga_sea.svg" alt="Loga Sea" width="293" height="273" loading="lazy">
                     <figcaption>
-                        <p>Relax</p>
-                        <p>3 Days, 3 Nights</p>
+                        <span>Relax</span>
+                        <span>3 Days, 3 Nights</span>
                     </figcaption>
                 </figure>
-                <p>14 FEB 2022</p>
-                <p><strong>Loga Sea</strong></p>
-                <p><strong>700$</strong>/Person</p>
+                <span>14 FEB 2022</span>
+                <span>Loga Sea</span>
+                <span><strong>700$</strong>/Person</span>
                 <button>Book Now</button>
-            </div>
+            </article>
 
-            <div class="special-offer">
+            <article class="special-offer">
                 <figure>
                     <img src="img/ansgar_scheffold.svg" alt="Ansgar Scheffold" width="293" height="273" loading="lazy">
                     <figcaption>
-                        <p>Adventure</p>
-                        <p>4 Days, 3 Nights</p>
+                        <span>Adventure</span>
+                        <span>4 Days, 3 Nights</span>
                     </figcaption>
                 </figure>
-                <p>18 JUN 2022</p>
-                <p><strong>Ansgar Scheffold</strong></p>
-                <p><strong>400$</strong>/Person</p>
+                <span>18 JUN 2022</span>
+                <span>Ansgar Scheffold</span>
+                <span><strong>400$</strong>/Person</span>
                 <button>Book Now</button>
-            </div>
+            </article>
 
-            <div class="special-offer">
+            <article class="special-offer">
                 <figure>
                     <img src="img/lona_x.svg" alt="Lana X" width="293" height="273" loading="lazy">
                     <figcaption>
-                        <p>Relax</p>
-                        <p>7 Days, 6 Nights</p>
+                        <span>Relax</span>
+                        <span>7 Days, 6 Nights</span>
                     </figcaption>
                 </figure>
-                <p>22 DEC 2022</p>
-                <p><strong>Lana X</strong></p>
-                <p><strong>340$</strong>/Person</p>
+                <span>22 DEC 2022</span>
+                <span>Lana X</span>
+                <span><strong>340$</strong>/Person</span>
                 <button>Book Now</button>
-            </div>
+            </article>
         </section>
 
-        <section id="travel-with-us">
+        <section class="travel-with-us">
             <img src="img/man_on_cliffs.svg" alt="A man on the cliffs" width="480" height="800" loading="lazy">
 
             <div>
-                <p><strong>300+</strong><br>DESTINATIONS</p>
+                <span>300+<br>DESTINATIONS</span>
             </div>
             <div>
-                <p><strong>500+</strong><br>TOURISTS</p>
+                <span>500+<br>TOURISTS</span>
             </div>
             <div>
-                <p><strong>150+</strong><br>HOTELS</p>
+                <span><150+<br>HOTELS</span>
             </div>
 
             <h1>Travel Any Corner of The World With Us</h1>
@@ -166,90 +172,94 @@
             <button>Contact Us</button>
         </section>
 
-        <section id="recommended-destinations">
+        <section class="recommended-destinations">
             <h1>Recommended Destinations</h1>
 
-            <div id="recommended-dest-tab">
+            <div class="recommended-dest-tab">
                 <button class="recommended-dest-tab-btn">Popular</button>
                 <button class="recommended-dest-tab-btn">Adventure</button>
                 <button class="recommended-dest-tab-btn">Beach</button>
             </div>
 
-            <div class="recommended-destination">
+            <article class="recommended-destination">
                 <img src="img/recommended_1.svg" alt="" width="260" height="200" loading="lazy">
                 <div>
                     <img src="img/rating_star.svg" alt="Rating Star" width="15" height="15" loading="lazy">
-                    <p>3.4</p>
+                    <span>3.4</span>
                 </div>
-                <p><strong>Kina Mountain</strong></p>
+                <span>Kina Mountain</span>
                 <img src="img/location_marker.svg" alt="Location Marker" width="17" height="17" loading="lazy">
-                <p>Combodia</p>
-            </div>
+                <span>Combodia</span>
+            </article>
 
-            <div class="recommended-destination">
+            <article class="recommended-destination">
                 <img src="img/recommended_2.svg" alt="" width="260" height="200" loading="lazy">
                 <div>
                     <img src="img/rating_star.svg" alt="Rating Star" width="15" height="15" loading="lazy">
-                    <p>4.5</p>
+                    <span>4.5</span>
                 </div>
-                <p><strong>Kina Mountain</strong></p>
+                <span>Kina Mountain</span>
                 <img src="img/location_marker.svg" alt="Location Marker" width="17" height="17" loading="lazy">
-                <p>Combodia</p>
-            </div>
+                <span>Combodia</span>
+            </article>
 
-            <div class="recommended-destination">
+            <article class="recommended-destination">
                 <img src="img/recommended_3.svg" alt="" width="260" height="200" loading="lazy">
                 <div>
                     <img src="img/rating_star.svg" alt="Rating Star" width="15" height="15" loading="lazy">
-                    <p>4.2</p>
+                    <span>4.2</span>
                 </div>
-                <p><strong>Kina Mountain</strong></p>
+                <span>Kina Mountain</span>
                 <img src="img/location_marker.svg" alt="Location Marker" width="17" height="17" loading="lazy">
-                <p>Combodia</p>
-            </div>
+                <span>Combodia</span>
+            </article>
 
-            <div class="recommended-destination">
+            <article class="recommended-destination">
                 <img src="img/recommended_4.svg" alt="" width="260" height="260" loading="lazy">
                 <div>
                     <img src="img/rating_star.svg" alt="Rating Star" width="15" height="15" loading="lazy">
-                    <p>3.5</p>
+                    <span>3.5</span>
                 </div>
-                <p><strong>Kina Mountain</strong></p>
+                <span>Kina Mountain</span>
                 <img src="img/location_marker.svg" alt="Location Marker" width="17" height="17" loading="lazy">
-                <p>Combodia</p>
-            </div>
+                <span>Combodia</span>
+            </article>
         </section>
 
-        <section id="reviews">
-            <div class="review">
+        <section class="reviews">
+            <article class="review">
                 <img src="img/review_quotes.svg" alt="Review Quotes" width="131" height="104" loading="lazy">
-                <p>Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone
-                    that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
-                <p>-Vand D</p>
-                <p>Happy Treloo</p>
+                <p>
+                    Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone
+                    that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
+                </p>
+                <span>-Vand D</span>
+                <span>Happy Treloo</span>
                 <div>
                     <img src="img/female_reviewer.svg" alt="Female Reviewer" width="100" height="100" loading="lazy">
                     <div>
                         <img src="img/rating_star.svg" alt="Rating Star" width="15" height="15" loading="lazy">
-                        <p>4.5</p>
+                        <span>4.5</span>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="review">
+            <article class="review">
                 <img src="img/review_quotes.svg" alt="Review Quotes" width="131" height="104" loading="lazy">
-                <p>Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone
-                    that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
-                <p>-Vand D</p>
-                <p>Happy Treloo</p>
+                <p>
+                    Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone
+                    that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
+                </p>
+                <span>-Vand D</span>
+                <span>Happy Treloo</span>
                 <div>
                     <img src="img/male_reviewer.svg" alt="Male Reviewer" width="100" height="100" loading="lazy">
                     <div>
                         <img src="img/rating_star.svg" alt="Rating Star" width="15" height="15" loading="lazy">
-                        <p>4.9</p>
+                        <span>4.9</span>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <button class="review-arrow"><img src="img/reviews_arrow.svg" alt="Arrow" width="15" height="23"
                     loading="lazy"></button>
@@ -257,18 +267,19 @@
                     loading="lazy"></button>
         </section>
 
-        <section id="special-offer">
-            <div id="offer-content">
+        <section class="discount-offer"> 
+            <!-- The image is background for below div -->
+            <div class="offer-content">
                 <h1>Don't Miss The 50% Discount if You Register Today</h1>
-                <button id="register">Register Today</button>
+                <button class="register">Register Today</button>
             </div>
         </section>
     </main>
 
     <footer>
-        <p id="all-rights-reserved">&copy; 2022 Treloo LLC - All right reserved.</p>
+        <p class="all-rights-reserved">&copy; 2022 Treloo LLC - All right reserved.</p>
 
-        <nav id="bottom-nav">
+        <nav class="bottom-nav">
             <a href="#">Review</a>
             <a href="#">Tips</a>
             <a href="#">Alerts</a>
