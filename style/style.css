@@ -1,5 +1,5 @@
 body, html {
-    margin: 0px;
+    margin: 0;
 }
 
 a, a:hover, a:visited, a:active {
@@ -194,7 +194,7 @@ header {
 }
 
 .offer-content {
-    background-image: url("img/specila_offer_background.svg");
+    background-image: url("../img/special_offer_background.svg");
     background-size: cover;
 }
 
