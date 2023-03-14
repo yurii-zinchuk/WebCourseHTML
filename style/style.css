@@ -1,5 +1,7 @@
 body, html {
     margin: 0;
+    background-color: #E5E5E5;
+    font-family: "Poppins";
 }
 
 a, a:hover, a:visited, a:active {
@@ -7,51 +9,55 @@ a, a:hover, a:visited, a:active {
     text-decoration: none;
 }
 
+button {
+    all: unset;
+    cursor: pointer;
+}
+
 header {
-    background-image: url("../img/main_screen_snowy_peaks.jpg");
+    background-image: url("../img/main_screen.jpg");
     background-size: cover;
     height: 950px;
     width: 100%;
     color: white;
 }
 
-.darkening {
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 100%;
-    width: 100%;
+.header-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7%;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding-top: 20px;
 }
 
-.main_page_caption {
-    display: inline;
-    position: relative;
-    top: 10px;
-    left: 10%;
+.treloo_caption {
+    margin-top: 10px;
 }
 
 .top-nav {
-    display: inline;
-    position: relative;
-    top: 10px;
-    left: 60%;
+    display: flex;
+    justify-self: end;
 }
 
 .top-nav-link {
-    display: inline-block;
+    display: flex;
     border-radius: 7px;
     width: 90px;
+    height: 50px;
     margin: 5px;
-    padding: 15px 0px 15px 0px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .top-nav-link:hover {
-    display: inline-block;
-    border-radius: 7px;
-    width: 90px;
-    margin: 5px;
-    padding: 15px 0px 15px 0px;
-    text-align: center;
     background-color:aliceblue;
+    color: blue;
+}
+
+button.top-nav-link {
+    border: 0;
+    background-color: aliceblue;
     color: blue;
 }
 
@@ -59,69 +65,99 @@ header {
 .big-motto {
     text-align: center;
     font-size: 70px;
-    margin: 300px 0px 0px 0px;
+    margin-top: 250px;
 }
 
 .under-motto {
     text-align: center;
     font-size: 30px;
-    margin: 40px 0px 0px 0px;
+    margin-top: 40px;
+}
+.flight-hotel {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    position: relative;
+    top: -130px;
+    left: 15%;
 }
 
 .flight-hotel-tab {
-    display: inline-block;
-    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 70px;
     width: 16%;
-    position: relative;
-    top: -130px;
-    left: 19%;
-    border-radius: 25px 25px 0% 0%;
+    min-width: 150px;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 25px 25px 0 0;
     background-color: whitesmoke;
 }
 
-.flight-hotel-tab-btn {
-    display: inline-block;
-    height: 65px;
-    width: 40%;
-    padding: 0px;
-    margin: 12px 4% 13px 4%;
-    border-radius: 20px;
+.flight-hotel-tab button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 70px;
+    width: 47%;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 10px 10px;
 }
 
-.flight-hotel-tab-btn img {
-    position: relative;
-    left: -10%;
+.flight-hotel-tab button:hover {
+    background-color: #3E86F533;
 }
 
-.flight-hotel-tab-btn span {
-    display: inline;
-    position: relative;
-    top: -10%;
+.flight-hotel-tab img {
+    height: 25px;
+    width: 25px;
+}
+
+.flight-hotel-tab span {
     font-size: 16px;
+    width: 40px;
 }
 
 .flight-hotel-choice {
-    width: 62%;
-    height: 275px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 40px 45px 60px;
+    width: 100%;
+    /*height: 275px;*/
+    height: fit-content;
     position: relative;
-    top: -130px;
-    left: 19%;
     background-color: whitesmoke;
-    border-radius: 0px 25px 25px 25px;
-    vertical-align: middle;
+    border-radius: 0 25px 25px 25px;
 }
 
-.flight-hotel-choice p {
-    display: inline-block;
-    font-size: 20px;
-    position: relative;
-    left: 15px;
-    top: 10px;
+.flight-hotel-choice label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85px;
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
-.flight-hotel-choice img {
-    position: relative;
-    margin: 0px 45px 0px 40px;
+.flight-hotel-choice button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E86F5CC;
+}
+
+.circled-img {
+    border-radius: 100%;
+    border: 1px dashed grey;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
 }
 
 .return-plane {
@@ -132,65 +168,465 @@ header {
     rotate: 315deg;
 }
 
-.flight-origin-destination {
-    display: inline-block;
+.origin-destination {
+    display: flex;
     height: 155px;
-    width: 30%;
-    position: absolute;
-    left: 3%;
-    top: 20%;
+    min-width: fit-content;
+    width: 32%;
     border-radius: 20px;
+    border: 1px solid grey;
     background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
-.flight-leave-return {
-    display: inline-block;
+.from-to {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flight-dates {
+    display: flex;
     height: 155px;
-    width: 45%;
-    position: absolute;
-    left: 35%;
-    top: 20%;
+    min-width: fit-content;
+    width: 47%;
     border-radius: 20px;
+    border: 1px solid grey;
     background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
 .search-btn {
     display: inline-block;
     height: 155px;
-    width: 15%;
-    position: absolute;
-    left: 82%;
-    top: 20%;
+    width: 155px;
     border-radius: 40%;
+    margin-top: 20px;
+}
+
+.special-upcoming-offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    position: relative;
+    left: 15%;
 }
 
 .special-upcoming-offers h1 {
-    font-size: 50px;
-    position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    margin-bottom: 80px;
 }
 
 .special-offers-tab {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     height: 70px;
-    width: 20%;
+    width: 355px;
     margin: auto;
-    background-color: whitesmoke;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .special-offers-tab button {
-    display: inline-block;
-    height: 60px;
-    width: 30%;
-    margin: 5px 1.2% 5px 1.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 105px;
+    border-radius: 10px;
+}
+
+.special-offers-tab button:hover {
+    background-color: #3E86F5;
+    color: white;
+}
+
+div.special-offer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    position: relative;
+    width: 100%;
 }
 
 .special-offer {
-    display: inline-block;
-    width: 25%;
-    margin-top: 70px;
+    display: flex;
+    width: 380px;
+    height: 420px;
+    min-width: 380px;
+    margin-top: 50px;
+    margin-right: 10px;
     position: relative;
-    left: 12.5%;
-    background-color: red;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.special-offer figure {
+    margin: 0;
+    position: absolute;
+    top: 21px;
+    left: 27px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.special-offer img {
+    margin-bottom: 10px;
+}
+
+.offer-date {
+    transform: rotate(90deg);
+    position: absolute;
+    left: 250px;
+    top: 145px;
+    width: 190px;
+    height: 27px;
+    font-size: 18px;
+}
+
+.loc-name {
+    position: absolute;
+    left: 30px;
+    top:330px;
+    font-size: 24px;
+}
+
+.price {
+    position: absolute;
+    left: 30px;
+    top: 365px;
+    font-size: 18px;
+}
+
+.price strong {
+    font-size: 24px;
+}
+
+.special-offer-wrapper button {
+    position: absolute;
+    top: 350px;
+    left: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #F2F6FF;
+    color: blue;
+}
+
+.special-offer-wrapper button:hover {
+    background-color: #c0d2fa;
+}
+
+.travel-with-us {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 240px;
+    margin-bottom: 200px;
+    width: 70%;
+    left: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.aman {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cliffs {
+    display: flex;
+    position: relative;
+    align-self: flex-start;
+    width: 600px;
+    height: 800px;
+}
+
+.badge {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 120px;
+    background-color: white;
+    border-radius: 35px;
+}
+
+.badge span {
+    color: #3E86F5;
+    font-size: 36px;
+}
+
+.b1 {
+    top: 56px;
+    left: 400px;
+}
+
+.b2 {
+    top: 377px;
+    left: -94px;
+}
+
+.b3 {
+    top: 537px;
+    left: 400px;
+}
+
+.travel-with-us .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100% - 600px);
+    height: fit-content;
+    max-height: 700px;
+    justify-self: flex-start;
+    min-width: 415px;
+    max-width: 735px;
+}
+
+.text-wrapper h1 {
+    font-size: 48px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.text-wrapper p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.text-wrapper button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 75px;
+    background-color: #3E86F5;
+    border-radius: 10px;
+    color: white;
+}
+
+.recommended-destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    left: 15%;
+
+}
+
+.recommended-destinations h1 {
+    font-size: 48px;
+}
+
+.recommended-dest-tab {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    width: 355px;
+    margin: auto auto 50px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.recommended-dest-tab button {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 105px;
+    border-radius: 10px;
+}
+
+.recommended-dest-tab button:hover {
+    color: blue;
+}
+
+.dst-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: fit-content;
+    margin-top: 40px;
+    margin-bottom: 330px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recommended-destination {
+    display: flex;
+    position: relative;
+    width: 280px;
+    height: 293px;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.recommended-destination .recomm {
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.recommended-destination .rating {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    left: 200px;
+    width: 55px;
+    height: 20px;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+.loc-nam {
+    position: absolute;
+    font-size: 18px;
+    top: 225px;
+    left: 20px;
+}
+
+.rec-loc {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    top: 255px;
+    left: 20px;
+}
+
+.reviews-sec {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+
+.reviews-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 49%;
+    background-color: white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 36px 25px 0;
+    min-width: 280px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+}
+
+.review p {
+    display: flex;
+    text-align: center;
+    position: relative;
+    top: -80px;
+    font-size: 20px;
+    line-height: 42px;
+}
+
+.rev-name {
+    color: #3E86F5;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: -80px;
+}
+
+.happy-tr {
+    font-size: 20px;
+    position: relative;
+    top: -60px;
+}
+
+.reviewer {
+    position: relative;
+    margin-top: -100px;
+    top: 55px;
+}
+
+.reviewer div {
+    position: absolute;
+    top: 7px;
+    left: 67px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    width: 45px;
+    height: 20px;
+    border-radius: 25px;
+}
+
+.review-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(62, 134, 245, 0.5);
+    border-radius: 15px;
+}
+
+.arrows-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+
+.review-arrow.l img {
+    rotate: 180deg;
 }
 
 .offer-content {
