@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     background-color: #E5E5E5;
     font-family: "Poppins";
+    min-width: 805px;
 }
 
 a, a:hover, a:visited, a:active {
@@ -17,7 +18,7 @@ button {
 header {
     background-image: url("../img/main_screen.jpg");
     background-size: cover;
-    height: 950px;
+    height: 952px;
     width: 100%;
     color: white;
 }
@@ -25,61 +26,83 @@ header {
 .header-header {
     display: flex;
     justify-content: space-between;
-    margin: 0 7%;
+    align-items: center;
+    width: 82%;
+    position: relative;
+    left: 9%;
     flex-wrap: wrap;
     height: fit-content;
     padding-top: 20px;
 }
 
 .treloo_caption {
-    margin-top: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
 }
 
 .top-nav {
     display: flex;
-    justify-self: end;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .top-nav-link {
     display: flex;
     border-radius: 7px;
-    width: 90px;
-    height: 50px;
+    width: 141px;
+    height: 65px;
     margin: 5px;
     justify-content: center;
     align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
 }
 
 .top-nav-link:hover {
-    background-color:aliceblue;
-    color: blue;
+    background-color: white;
+    color: #3E86F5;
 }
 
 button.top-nav-link {
-    border: 0;
-    background-color: aliceblue;
-    color: blue;
+    background-color: white;
+    color: #3E86F5;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
 }
 
 
 .big-motto {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 96px;
     text-align: center;
-    font-size: 70px;
-    margin-top: 250px;
+    margin-top: 150px;
 }
 
 .under-motto {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 48px;
     text-align: center;
-    font-size: 30px;
     margin-top: 40px;
 }
+
 .flight-hotel {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    /*width: 70%;*/
+    width: 82vw;
     position: relative;
     top: -130px;
-    left: 15%;
+    left: 9vw;
 }
 
 .flight-hotel-tab {
@@ -87,12 +110,12 @@ button.top-nav-link {
     justify-content: space-between;
     align-items: flex-start;
     height: 70px;
-    width: 16%;
+    width: 16vw;
     min-width: 150px;
     max-width: 250px;
     padding: 10px;
     border-radius: 25px 25px 0 0;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .flight-hotel-tab button {
@@ -106,6 +129,9 @@ button.top-nav-link {
     border-radius: 25px;
     box-sizing: border-box;
     padding: 10px 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .flight-hotel-tab button:hover {
@@ -125,15 +151,15 @@ button.top-nav-link {
 .flight-hotel-choice {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     box-sizing: border-box;
     padding: 40px 45px 60px;
     width: 100%;
-    /*height: 275px;*/
     height: fit-content;
     position: relative;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 0 25px 25px 25px;
+    min-width: 575px;
 }
 
 .flight-hotel-choice label {
@@ -152,12 +178,21 @@ button.top-nav-link {
     background-color: #3E86F5CC;
 }
 
+.flight-hotel-choice select, input {
+    border: unset;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
 .circled-img {
     border-radius: 100%;
     border: 1px dashed grey;
     width: 30px;
     height: 30px;
     padding: 4px;
+    margin: 0 15px;
 }
 
 .return-plane {
@@ -219,15 +254,20 @@ button.top-nav-link {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 82vw;
     position: relative;
-    left: 15%;
+    left: 9vw;
+    min-width: 370px;
 }
 
 .special-upcoming-offers h1 {
     display: flex;
     justify-content: center;
+    font-style: normal;
+    font-weight: 600;
     font-size: 48px;
+    line-height: 72px;
+    text-align: center;
     margin-bottom: 80px;
 }
 
@@ -235,8 +275,8 @@ button.top-nav-link {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 70px;
-    width: 355px;
+    height: 66px;
+    width: 340px;
     margin: auto;
     background-color: white;
     border-radius: 10px;
@@ -246,9 +286,14 @@ button.top-nav-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 105px;
+    height: 46px;
+    width: 100px;
     border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .special-offers-tab button:hover {
@@ -268,7 +313,7 @@ div.special-offer-wrapper {
 .special-offer {
     display: flex;
     width: 380px;
-    height: 420px;
+    height: 457px;
     min-width: 380px;
     margin-top: 50px;
     margin-right: 10px;
@@ -283,34 +328,86 @@ div.special-offer-wrapper {
     top: 21px;
     left: 27px;
     border-radius: 50px;
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
+    line-height: 21px;
 }
 
 .special-offer img {
     margin-bottom: 10px;
+    width: 293px;
+    height: 273px;
+}
+
+.special-offer figcaption span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.special-offer figcaption {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.special-offer figcaption span.type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 21px;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: 5px;
+}
+
+.special-offer figcaption span.type.adventure {
+    color: #7879F1;
+    background-color: #F1F1FD;
+    width: 104px;
+}
+
+.special-offer figcaption span.type.relax {
+    color: #F178B6;
+    background-color: #FCDDEC;
+    width: 69px;
 }
 
 .offer-date {
     transform: rotate(90deg);
     position: absolute;
-    left: 250px;
+    left: 245px;
     top: 145px;
-    width: 190px;
+    width: 208px;
     height: 27px;
+    font-style: normal;
+    font-weight: 500;
     font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.5em;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .loc-name {
     position: absolute;
     left: 30px;
-    top:330px;
+    top: 340px;
+    font-style: normal;
+    font-weight: 600;
     font-size: 24px;
+    line-height: 36px;
 }
 
 .price {
     position: absolute;
     left: 30px;
-    top: 365px;
+    top: 385px;
     font-size: 18px;
 }
 
@@ -320,7 +417,7 @@ div.special-offer-wrapper {
 
 .special-offer-wrapper button {
     position: absolute;
-    top: 350px;
+    top: 380px;
     left: 240px;
     display: flex;
     justify-content: center;
@@ -342,8 +439,9 @@ div.special-offer-wrapper {
     position: relative;
     margin-top: 240px;
     margin-bottom: 200px;
-    width: 70%;
-    left: 15%;
+    margin-left: 50px;
+    width: 82vw;
+    left: 9vw;
     justify-content: center;
     align-items: center;
 }
@@ -372,11 +470,18 @@ div.special-offer-wrapper {
     height: 120px;
     background-color: white;
     border-radius: 35px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .badge span {
     color: #3E86F5;
+    font-style: normal;
+    font-weight: 600;
     font-size: 36px;
+    line-height: 54px;
 }
 
 .b1 {
@@ -401,20 +506,27 @@ div.special-offer-wrapper {
     align-items: flex-start;
     width: calc(100% - 600px);
     height: fit-content;
-    max-height: 700px;
+    max-height: 800px;
     justify-self: flex-start;
-    min-width: 415px;
+    min-width: 412px;
     max-width: 735px;
 }
 
 .text-wrapper h1 {
+    font-style: normal;
+    font-weight: 600;
     font-size: 48px;
+    line-height: 72px;
     margin-bottom: 0;
     text-align: left;
 }
 
 .text-wrapper p {
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
+    line-height: 200%;
+    color: rgba(0, 0, 0, 0.5);
     text-align: justify;
 }
 
@@ -434,14 +546,17 @@ div.special-offer-wrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 82vw;
     position: relative;
-    left: 15%;
+    left: 9vw;
 
 }
 
 .recommended-destinations h1 {
+    font-style: normal;
+    font-weight: 600;
     font-size: 48px;
+    line-height: 72px;
 }
 
 .recommended-dest-tab {
@@ -449,7 +564,7 @@ div.special-offer-wrapper {
     justify-content: space-evenly;
     align-items: center;
     height: 70px;
-    width: 355px;
+    width: 390px;
     margin: auto auto 50px;
     background-color: transparent;
     border-radius: 10px;
@@ -460,13 +575,18 @@ div.special-offer-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 105px;
+    height: 46px;
+    width: 120px;
     border-radius: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .recommended-dest-tab button:hover {
-    color: blue;
+    color: #3E86F5;
 }
 
 .dst-wrapper {
@@ -501,7 +621,7 @@ div.special-offer-wrapper {
 
 .recommended-destination .rating {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: absolute;
     top: 25px;
@@ -518,6 +638,10 @@ div.special-offer-wrapper {
     font-size: 18px;
     top: 225px;
     left: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .rec-loc {
@@ -529,6 +653,11 @@ div.special-offer-wrapper {
     height: fit-content;
     top: 255px;
     left: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .reviews-sec {
@@ -537,9 +666,9 @@ div.special-offer-wrapper {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 82vw;
     position: relative;
-    left: 15%;
+    left: 9vw;
 }
 
 .reviews-wrapper {
@@ -556,35 +685,45 @@ div.special-offer-wrapper {
     flex-direction: column;
     align-items: center;
     height: fit-content;
-    width: 49%;
+    width: 45%;
     background-color: white;
     border-radius: 50px;
     box-sizing: border-box;
     padding: 36px 25px 0;
-    min-width: 280px;
+    min-width: 310px;
     margin-right: 10px;
     margin-bottom: 70px;
 }
 
 .review p {
     display: flex;
-    text-align: center;
     position: relative;
     top: -80px;
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px;
     line-height: 42px;
+    text-align: center;
 }
 
 .rev-name {
     color: #3E86F5;
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px;
+    line-height: 42px;
     text-align: center;
     position: relative;
     top: -80px;
 }
 
 .happy-tr {
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
     position: relative;
     top: -60px;
 }
@@ -606,6 +745,10 @@ div.special-offer-wrapper {
     width: 45px;
     height: 20px;
     border-radius: 25px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .review-arrow {
@@ -629,15 +772,91 @@ div.special-offer-wrapper {
     rotate: 180deg;
 }
 
+.discount-offer {
+    display: flex;
+    width: 82vw;
+    position: relative;
+    left: 9vw;
+    margin-top: 145px;
+    margin-bottom: 120px;
+}
+
 .offer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    min-height: 500px;
     background-image: url("../img/special_offer_background.svg");
     background-size: cover;
+    color: white;
+    border-radius: 100px;
+    min-width: 490px;
+    box-sizing: border-box;
+    padding: 0px 30px 0px;
+}
+
+.offer-content h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.offer-content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 80px;
+    background-color: white;
+    color: #3E86F5;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 82vw;
+    position: relative;
+    left: 9vw;
+    margin-bottom: 20px;
 }
 
 .all-rights-reserved {
-    display: inline;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0;
 }
 
 .bottom-nav {
-    display: inline;
+    display: flex;
+    width: 360px;
+    justify-content: space-between;
+    height: fit-content;
+    margin-left: 20px;
+}
+
+.bottom-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.75);
 }
